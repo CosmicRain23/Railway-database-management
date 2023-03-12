@@ -1,0 +1,43 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>
+        eTicketing Platform
+    </title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.png' %}">
+</head>
+<BODY>
+    <div class="navi">
+    <ul>
+        <li><a onclick= "location.href='{% url 'home' %}'">Home</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a onclick= "location.href='{% url 'search' %}'">Search Train</a></li>
+        <li><a onclick= "location.href='{% url 'about' %}'">About</a></li>
+        <li><a onclick= "location.href='{% url 'help' %}'">Help</a>
+      </ul>
+    </div>
+    <div class="sectionLeft">
+    <h1>INDIAN RAILWAYS</h1>
+    <br>
+    <h2>SAFETY | SECURITY | PUNCTUALITY</h2>
+    </div>
+    <div class="sectionLeft">
+    <img src="{% static 'index_bg.jpg' %}" >
+    </div>
+    <div class="belowImage">
+        <marquee>Welcome to Indian Railways</marquee>
+    </div>
+    <div class="PNR">
+        <h1>PNR STATUS</h1>
+        <form action="pnr/" method="post">
+            {% csrf_token%}
+            <label for="pnr">Enter PNR no.:</label><br><br>
+            <input type="number" id="pnr" placeholder="pnr" name="pnr"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</BODY>
+</html>

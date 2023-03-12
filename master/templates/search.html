@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            python button
+        </title>
+    </head>
+    <body>
+        <form  method = "post">
+        {% csrf_token%}
+        From:
+        <input type="text" name="from"required action="location.href='{% url 'input' %}'"><br><br>
+    </form>
+    <form action="/external/" method = "post">
+        {% csrf_token%}
+        To:
+        <input type="text" name="to"required> 
+        <br> <br>
+        <input type="submit" value="Execute script">
+    </form>
+
+    <!-- <button onclick="location.href='{% url 'search'%}'">execute script</button><hr> -->
+</body>
+</html>

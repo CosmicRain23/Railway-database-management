@@ -1,0 +1,180 @@
+body{
+    margin:0%;
+    background-color: rgb(120, 153, 156);
+}
+.navi{
+    background-color: #333333;
+}
+.navi ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+.navi li{
+    float: left;
+}
+.navi li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding:30px;
+    text-decoration: none;  
+}
+.navi li a:hover{
+    background-color: #111111;
+}
+.sectionLeft{
+    background-color: #4c9eca;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 350px;
+    float: left;
+}
+.sectionLeft img{
+    height:350px;
+    width: 830px;
+    float: right;}
+.sectionLeft h1{
+    margin:0;
+    color:#fff;
+    text-align: center;
+}
+.sectionLeft h2{
+    margin:0;
+    color:#fff;
+    text-align: center;
+}
+.links{
+    background-color: antiquewhite;
+}
+.belowImage{
+    background-color: #333333;
+    height: 450px;
+}
+.belowImage marquee{
+    color: red;
+    margin: 2%;
+}
+.linkAdd{
+    margin:10px;
+    padding:12px;
+}
+.linkAdd ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.linkAdd li{
+    border-color: #111111;
+    border-style: solid;
+    border-radius: 40%;
+    background-color: rgb(53, 132, 139);
+    margin: 9px;
+}
+.linkAdd li a{
+    display: block;
+    text-align:center;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+}
+.linkAdd li a:hover{
+    background-color: #333333;
+    border-radius: 40%;
+}
+.PNR h1{
+    text-align: center;
+    color: #fff;
+}
+.PNR form{
+    margin: 20px auto;
+    text-align: center;
+}
+.Login h1{
+    color: #fff;
+    text-align: center;
+}
+.Login img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+}
+.Login form{
+    margin: 0 auto;
+    text-align: center;
+}    
+.searchTrain{
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+.liveTrain{
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+.trainChart h1{
+    text-align: center;
+    color: #fff;
+}
+.trainChart table{
+    border: 3px solid rgb(0, 0, 0);
+}
+.trainChart table th{
+    border: 3px solid rgb(0, 0, 0);
+    padding: 10px;
+    color: black;
+}
+.searchTrain2{
+    margin: 0 auto;
+    text-align: center;
+}
+.searchTrain2 h1{
+    color: #fff;
+}
+.searchTrain2 table{
+    border: 3px solid rgb(0, 0, 0);
+    padding: 10px;
+    color: black;
+}
+.searchTrain2 table th{
+    border: 3px solid black;
+    padding: 10px;
+    color: black;
+}
+.searchTrain2 table td{
+    border: 3px solid black;
+    padding: 10px;
+    color: black;
+}
+.searchTrain2 table tr:hover{
+    background-color: rgb(53, 132, 139);
+}
+.liveTrain2{
+    margin: 0 auto;
+    text-align: center;
+}
+.liveTrain2 h1{
+    color: #fff;
+}
+.liveTrain2 table{
+    border: 3px solid rgb(0, 0, 0);
+    padding: 10px;
+    color: black;
+}
+.liveTrain2 table th{
+    border: 3px solid black;
+    padding: 10px;
+    color: black;
+}
+.liveTrain2 table td{
+    border: 3px solid black;
+    padding: 10px;
+    color: black;
+}

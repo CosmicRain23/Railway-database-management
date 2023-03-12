@@ -1,0 +1,45 @@
+{% load static %}
+    <!DOCTYPE html>
+    <html lang = "en">
+    <head>
+    <title>
+        eTicketing Platform
+    </title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.png'%}">
+    </head>
+    <BODY>
+    <div class="navi">
+    <ul>
+        <li><a onclick= "location.href='{% url 'home' %}'">Home</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a onclick= "location.href='{% url 'search' %}'">Search Train</a></li>
+        <li><a onclick= "location.href='{% url 'about' %}'">About</a></li>
+        <li><a onclick= "location.href='{% url 'help' %}'">Help</a>
+      </ul>
+    </div>
+    <div class="sectionLeft">
+    <h1>INDIAN RAILWAYS</h1>
+    <br>
+    <h2>SAFETY | SECURITY | PUNCTUALITY</h2>
+    </div>
+    <div class="sectionLeft">
+    <img src="{% static 'index_bg.jpg' %}" >
+    </div>
+    <div class="belowImage">
+        <marquee>Welcome to Indian Railways</marquee>
+    </div>
+    <div class="liveTrain2">
+        <h1 align="center">Live Train Status</h1>
+        <table align="center"><tr>
+            <th>Train no. : 12222</th>
+        </tr>
+        <tr>
+            <th>Last station : 1100</th>
+        </tr>
+        <tr>
+            <th>Last station Time : 8:55:00</th>
+        </tr>
+        </table>
+    </div>

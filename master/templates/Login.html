@@ -1,0 +1,42 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>
+        eTicketing Platform
+    </title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.png' %}">
+</head>
+<BODY>
+    <div class="navi">
+    <ul>
+        <li><a href="#">Register</a></li>
+        <li><a onclick= "location.href='{% url 'about' %}'">About</a></li>
+        <li><a onclick= "location.href='{% url 'help' %}'">Help</a>
+      </ul>
+    </div>
+    <div class="sectionLeft">
+    <h1>INDIAN RAILWAYS</h1>
+    <br>
+    <h2>SAFETY | SECURITY | PUNCTUALITY</h2>
+    </div>
+    <div class="sectionLeft">
+    <img src="{% static 'index_bg.jpg' %}" >
+    </div>
+    <div class="belowImage">
+        <marquee>Welcome to Indian Railways</marquee>
+    </div>
+    <div class="Login">
+        <h1>LOGIN PORTAL</h1>
+        <img src="{% static 'img_avatar2.png' %}">
+        <form action="/home" >
+            <label for="username">Enter Username: </label><br>
+            <input type="text" id="username"><br>
+            <label for="password">Enter password: </label><br>
+            <input type="password" id="password"><br><br>
+            <input type="submit" id="submit" placeholder="Submit">
+        </form>
+    </div>
+</BODY>
+</html>

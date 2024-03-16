@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <table align="center" cellpadding="10px">
+        <tr>
+            <th>Train number</th>
+            <th>PNR number</th>
+            <th>Passenger name</th>
+            <th>Age</th>
+            <th>Seat number</th>
+            <!-- <th>Book</th> -->
+        </tr>
+        {% for row in result %}
+        <tr>
+            <td>{{ row.0 }}</td>
+            <td>{{ row.1 }}</td>
+            <td>{{ row.2 }}</td>
+            <td>{{ row.3 }}</td>
+            <td>{{ row.4 }}</td>
+            <!-- <td><a onclick="location.href = '{% url 'book' %}'">BOOK</a></td> -->
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+
+    <div class="quickaccess">
+        <table>
+          <tr>
+            <td><a href="{% url 'home' %}">Home</a></td>
+            <td><a href="{% url 'improutes' %}">Popular routes</a>
+                <ul class="dropdown">
+                    <li><a href="#">Route 1</a></li>
+                    <li><a href="#">Route 2</a></li>
+                    <li><a href="#">Route 3</a></li>
+                    <!-- Add more route items as needed -->
+                </ul>
+            </td>
+            <td><a href="{% url 'about' %}">About us</a></td>
+            <td><a href="{% url 'help' %}">Help</a></td>
+            <td class="r">sign in</td>
+            <td class="r">sign up</td>
+          </tr>
+        </table>
+    </div>
+
+    <div class="image-container">
+        <img src="{% static 'regina-x55-in-o-rnsko-ldsvik_orig.jpg' %}" alt="Your Image" class="image">
+        <div class="text-overlay">Your Text</div>
+      </div>
+    
+
+
+
+    <ul>
+        <li><a href="{% url 'search' %}">Search Train</a></li>
+        <li><a href="{% url 'chart' %}">Chart</a></li>
+        <li><a href="{% url 'live' %}">Live Train Status</a></li>
+        <li><a href="{% url 'enquiry' %}">PNR enquiry</a></li>
+    </ul>
+</body>
+</html>

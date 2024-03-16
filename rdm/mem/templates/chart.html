@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <form action="{% url 'getchart' %}" method="post">
+            {% csrf_token %}
+            <label for="train_no">Train number:</label>
+            <input type="text" id="train_no" name="train_no"><br>
+            <input type="submit" id="submit">
+        </form>
+    </body>
+</html>

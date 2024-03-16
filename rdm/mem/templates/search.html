@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>search</title>
+    </head>
+    <body>
+        <form action="{% url 'searchres' %}" method = "post">
+            {% csrf_token %}
+            <label for="from">From: </label><br>
+            <input type="text" id="from" name="from"><br>
+            <label for="to">To </label><br>
+            <input type="text" id="To" name="to"><br><br>
+            <input type="submit" id="submit" placeholder="Submit"  >
+        </form>
+    </body>
+</html>

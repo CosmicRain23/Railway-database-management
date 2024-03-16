@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <form action="{% url 'getPNR' %}" method="post">
+            {% csrf_token %}
+            <label for="PNR">PNR number:</label>
+            <input type="text" id="PNR" name="PNR" required="required"><br>
+            <input type="submit" id="submit">
+        </form>
+    </body>
+</html>
